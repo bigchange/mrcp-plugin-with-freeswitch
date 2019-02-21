@@ -54,7 +54,7 @@ brew install libsndfile
 cd freeswitch/
 # 先执行 bootstrap.sh，生成configure文件
 ./bootstrap.sh 
-./configure --prefix=/usr/local/freeswitch
+./configure --prefix=/usr/local/freeswitch (最好不要指定--prefix，安装的目录结构会不一样)
 make
 make install
 make cd-sounds-install
